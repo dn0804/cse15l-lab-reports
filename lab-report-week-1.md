@@ -51,3 +51,22 @@ This will copy the file over to your account's home directory on the remote comp
 (Note that in my example picture I am using my active directory email)
 
 ## Step 5: Create an SSH key
+
+For this step, we will be creating an SSH key for convenience. That way, we won't have to input our password every time we log in to our account or use scp command. 
+
+Run the command ssh-keygen on your computer (not the remote computer). It will prompt you for where you want the key saved. Press enter to save it to the default location of C:/Users/(your username)/.ssh/id_rsa.
+After inputting location, it will prompt you for the passphrase. Leave the field empty and press enter. After saving the key, make a directory called .ssh in your course-specific account and log out, then use the scp command to copy the public key file into your remote computer's .ssh directory.
+
+![Image](sshkey.jpg)
+
+Now you should be able to log in without having to input your password.
+
+## Optimizing Remote Running
+
+You can also try to write multiple commands in one line, separated by a semicolon, to run them at once. You can combine this shortcut with putting your command in quotes at the end of an ssh command for them to run on the remote server and logout. 
+
+An example of this is shown below:
+
+![Image](combin.JPG)
+
+I, however, could not edit the file and run it in the remote server in one line. I would have to edit it first using Notepad on my computer, secure copy it over to the remote computer, and then run the javac and java commands at once.
