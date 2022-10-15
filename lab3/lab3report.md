@@ -25,7 +25,7 @@ Bug:
 
 Fixed code:
 
-![Image](fixedreverseinplace.jpg)
+![fixed reverse in place code](fixedreverseinplace.jpg)
 
 ## Linked List Example bug
 
