@@ -78,4 +78,5 @@ Example 3:
 This output resulted from the input:
 ```
 less -p 'weight gain' -N ./technical/biomed/1468-6708-3-1.txt
+```
 Using this command option in combination with the -N option from before, we now know that the first instance of the phrase "weight gain" in this file appears on line 17.
